@@ -10,8 +10,5 @@ window.onmousemove = function (e) {
 };
 
 window.addEventListener("scroll", (e) => {
-  console.log(e.target.scrollTop);
-  if (e.target.scrollTop == 300) {
-
-  }
+  console.log(window.scrollY);
 });
