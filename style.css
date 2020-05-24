@@ -1,0 +1,157 @@
+@import url("https://fonts.googleapis.com/css2?family=Harmattan&family=Krona+One&family=Notable&display=swap");
+
+body {
+  /* background-image: linear-gradient(to top, #c7eafd 0%, #e8198b 100%); */
+  background-image: linear-gradient(
+    20deg,
+    #7ac5d8 0%,
+    #fbfcdb 19%,
+    #97d9e1 42%,
+    #b49fda 79%,
+    #e8198b 100%
+  );
+  background-repeat: no-repeat, repeat;
+  height: 500vh;
+  padding: 20px;
+}
+@keyframes jenny {
+  from {
+    top: 0px;
+  }
+  to {
+    top: 200px;
+  }
+}
+
+/* .logo {
+  width: 60px;
+  height: 60px;
+  color: #fff;
+} */
+
+main {
+  color: #fff;
+  width: 90%;
+  margin-top: 15%;
+  margin-left: 10%;
+  font-family: "Krona One", sans-serif;
+  text-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+
+.home_h1 {
+  font-size: 110px;
+  letter-spacing: 2px;
+}
+
+.home_h2 {
+  font-size: 55px;
+  letter-spacing: 2px;
+  width: 90%;
+}
+
+.home_button {
+  padding: 0.5rem;
+  border-radius: 10px;
+  outline: none;
+  border: solid 1px #fff;
+  text-align: center;
+  letter-spacing: 2px;
+  font-size: 15px;
+  width: 150px;
+  background: none;
+  color: #fff;
+  margin-top: 20px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+
+nav {
+  float: right;
+}
+
+a {
+  text-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  color: #fff;
+  text-decoration: none;
+  padding: 15px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-size: 15px;
+  font-family: "Harmattan", sans-serif;
+}
+
+a:hover {
+  color: #000;
+  transition: linear all 0.3s;
+  pointer-events: cursor;
+}
+
+.bio {
+  width: 38%;
+  letter-spacing: 1px;
+  text-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+
+#about {
+  margin-top: 20%;
+}
+
+.about_j {
+  font-size: 150px;
+  padding-right: 50px;
+  font-family: "Krona One", sans-serif;
+  letter-spacing: 1px;
+  /* width: 40%; */
+  text-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+
+.about_p {
+  margin-top: 20px;
+  padding: 10px;
+  font-size: 50px;
+  /* width: 60%; */
+  font-family: "Krona One", sans-serif;
+  letter-spacing: 1px;
+}
+
+.profile {
+  width: 330px;
+  height: 300px;
+  border-radius: 10px;
+  margin-right: 50px;
+}
+
+#projects {
+  margin-top: 15%;
+}
+
+ion-icon {
+  font-size: 28px;
+  padding: 10px;
+  margin-left: 20px;
+}
+
+span {
+  text-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+
+.circle {
+  position: fixed;
+  z-index: 1;
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  background: red;
+}
+
+.skills_h1 {
+  font-size: 150px;
+  padding-right: 50px;
+  font-family: "Krona One", sans-serif;
+  letter-spacing: 1px;
+  /* width: 40%; */
+  text-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+.skills {
+  padding: 10px 50px;
+  text-align: center;
+}
