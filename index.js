@@ -5,14 +5,32 @@ window.onmousemove = function (e) {
   let y = e.clientY;
   let newx = x - 60;
   let newy = y - 60;
-  circle.style.transform = "translate3d(" + newx + "px," + newy + "px, 0px)";
-  circle.style.mixBlendMode = "difference";
+  circle.style.top = newy + 'px';
+  circle.style.left = newx + 'px';
 };
 
+
+function isElementInViewport(el) {
+  var rect = el.getBoundingClientRect();
+
+  return (
+    rect.top >= 0 &&
+    rect.left >= 0 &&
+    rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) && /* or $(window).height() */
+    rect.right <= (window.innerWidth || document.documentElement.clientWidth) /* or $(window).width() */
+  );
+}
+const aboutEl = document.getElementById('about__title');
 window.addEventListener("scroll", (e) => {
-  console.log(e.target.scrollTop);
-  if(e.target.scrollTop == 300) {
-      let el = do;
-      el.style = "animation: jenny 5s infinite;"
+  // console.log(window.scrollY);
+  const isAboutElInView = isElementInViewport(aboutEl);
+
+  if (isAboutElInView) {
+    console.log('in view');
+    if (!aboutEl.classList.contains('slide-up')) {
+      aboutEl.classList.add("slide-up");
+    }
+  } else {
+    aboutEl.classList.remove("slide-up");
   }
 });
