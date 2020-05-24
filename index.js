@@ -7,7 +7,6 @@ window.onmousemove = function (e) {
   let newy = y - 60;
   circle.style.top = newy + 'px';
   circle.style.left = newx + 'px';
-  circle.style.mixBlendMode = 'difference';
 };
 
 window.addEventListener("scroll", (e) => {

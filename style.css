@@ -141,6 +141,7 @@ span {
   width: 200px;
   height: 200px;
   background: white;
+  mix-blend-mode: difference;
 }
 
 .skills_h1 {
