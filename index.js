@@ -11,12 +11,6 @@ window.onmousemove = function (e) {
 
 
 function isElementInViewport(el) {
-
-  // Special bonus for those using jQuery
-  if (typeof jQuery === "function" && el instanceof jQuery) {
-    el = el[0];
-  }
-
   var rect = el.getBoundingClientRect();
 
   return (
