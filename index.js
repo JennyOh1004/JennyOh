@@ -12,8 +12,7 @@ window.onmousemove = function (e) {
 
 window.addEventListener("scroll", (e) => {
   console.log(e.target.scrollTop);
-  if(e.target.scrollTop == 300) {
-      let el = do;
-      el.style = "animation: jenny 5s infinite;"
+  if (e.target.scrollTop == 300) {
+
   }
 });
