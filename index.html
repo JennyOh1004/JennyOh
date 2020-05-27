@@ -6,15 +6,18 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="stylesheet" href="style.css" />
     <script src="https://unpkg.com/ionicons@4.5.5/dist/ionicons.js"></script>
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
     <link rel="icon" type="image/x-icon" href="./assets/favicon.ico" />
     <title>Jenny's World</title>
   </head>
 
-<body>
-  <header>
-    <div>Logo</div>
-  </header>
+  <body>
+    <header>
+      <div>
+        <!-- <img class="logo" src="logo.png" /> -->
+        Logo
+      </div>
+    </header>
 
     <nav class="nav" id="nav">
       <ul>
@@ -25,77 +28,105 @@
       </ul>
     </nav>
 
-  <div>
-    <main>
+    <div>
+      <main>
+        <h2 class="home_h2 slide-up">
+          Hi there, My name is <span style="color: #b49fda;">Jenny</span>. I'm a
+          <span style="color: #b49fda;">Web Developer</span> based in the bay
+          area focused on <span style="color: #b49fda;">Front-end</span> Web
+          development.
+        </h2>
 
-      <h2 class="home_h2 slide-up">
-        Hi there, My name is <span style="color: #b49fda">Jenny</span>. I'm <span
-          style="color: #b49fda">Front-end</span> Web Developer from San
-        Jose, California, focused on <span style="color: #b49fda">Front-end</span> Web development.
-      </h2>
+        <!-- <button class="home_button">Learn More</button> -->
+        <div class="icons">
+          <a href="https://www.linkedin.com/in/seulkioh1004/">
+            <ion-icon name="logo-linkedin"></ion-icon>
+          </a>
+          <a href="https://github.com/JennyOh1004">
+            <ion-icon name="logo-github"></ion-icon>
+          </a>
+          <a href="mailto:ohseulki1004@gmail.com">
+            <ion-icon name="mail"></ion-icon>
+          </a>
+        </div>
+      </main>
+    </div>
 
-      <!-- <button class="home_button">Learn More</button> -->
-      <div class="icons">
-        <a href="https://www.linkedin.com/in/seulkioh1004/">
-          <ion-icon name="logo-linkedin"></ion-icon>
-        </a>
-        <a href="https://github.com/JennyOh1004">
-          <ion-icon name="logo-github"></ion-icon>
-        </a>
-        <a href="mailto:ohseulki1004@gmail.com">
-          <ion-icon name="mail"></ion-icon>
-        </a>
-      </div>
-    </main>
-  </div>
+    <div id="about" class="about">
+      <h1 id="about__title" class="about_j">
+        About<span style="color: #fff;">.</span>
+      </h1>
+      <p class="about_p">
+        I love to build
+        <span style="color: #e2ebf0;"
+          >aesthetically
+          <span style="color: #000; font-size: 75px;" ;>p</span>leasing,</span
+        >
+      </p>
+      <p class="about_p">
+        <span class="about__creative" style="color: #fbfcdb;"
+          ><span style="color: #000; font-size: 75px;" ;>c</span>reative,
+        </span>
+      </p>
+      <p class="about_p">
+        <span class="about__uf" style="color: #deecdd;"
+          ><span style="color: #000; font-size: 75px;" ;>u</span
+          >ser-friendly</span
+        >
+      </p>
+      <p class="about_p">
+        web pages and web applications.
+      </p>
 
-  <div id="about" class="about">
-    <h1 id="about__title" class="about_j">About<span style="color: #fff;">.</span></h1>
-    <p class="about_p">
-      I love to build <span style="color: #e2ebf0;">aesthetically pleasing,</span>
-    </p>
-    <p class="about_p">
-      <span style="color: #e2ebf0;">creative, </span>
-    </p>
-    <p class="about_p">
-      <span style="color: #e2ebf0;">user-friendly</span> web pages and web applications.
-    </p>
+      <p class="about_p">
+        I am focused on writing clean, meaningful and efficient code.
+      </p>
+      <p class="about_p">
+        I also enjoy to create intuitive and minimal designs.
+      </p>
+    </div>
 
-    <p class="about_p">
-      I am focused on writing clean, meaningful and
-      efficient code.
-    </p>
-    <p class="about_p">
-      I also enjoy to create intuitive and minimal designs.
-    </p>
     <div class="skills">
       <h1 class="skills_h1">Skills<span style="color: #fff;">.</span></h1>
-
-      <div class="chart" data-percent="80">HTML</div>
-      <div class="chart" data-percent="80">CSS</div>
-      <div class="chart" data-percent="60">JavaScript</div>
-      <div class="chart" data-percent="60">React</div>
+      <div class="chartContainer">
+        <canvas id="myHtml"></canvas>
+        <canvas id="myCss"></canvas>
+        <canvas id="myJs"></canvas>
+        <canvas id="myReact"></canvas>
+        <canvas id="myRuby"></canvas>
+        <canvas id="myRails"></canvas>
+      </div>
     </div>
-    </p>
-  </div>
 
-  <div id="projects">
-    <h1>Project</h1>
-    <p>Project 3개 list (yoga web, client web, react)</p>
-    <p>1. 제목 </p>
-    <p>2. image 캡처 보여주기 (scroll effect), </p>
-    <p>설명은 간단히 </p>
+    <div id="projects" class="projects">
+      <h1 class="project__h1">Projects<span style="color: #fff;">.</span></h1>
+      <p>Project 3개 list (yoga web, client web, react)</p>
+      <p>1. 제목</p>
+      <p>2. image 캡처 보여주기 (scroll effect),</p>
+      <p>설명은 간단히</p>
+    </div>
 
-  </div>
+    <div id="contact" class="contact">
+      <h1 class="contact__h1">Contact<span style="color: #fff;">.</span></h1>
 
-  <div id="contact">
-    <h1>Contact</h1>
-    <p>email form</p>
-    <p>contact info icons</p>
+      <div class="contact__info">
+        <form>
+          <input name="name" placeholder="Your Name" required /><br />
+          <input name="email" placeholder="You@example.com" required /><br />
+          <textarea
+            rows="4"
+            cols="50"
+            name="message"
+            placeholder="Your Message"
+            required
+          ></textarea>
+          <input name="submit" type="submit" value="Send" class="button" />
+        </form>
+      </div>
+    </div>
 
-  </div>
-  <div class="circle" id="circle"> </div>
-  <script src="index.js"></script>
-</body>
-
+    <div class="circle" id="circle"></div>
+    <script src="index.js"></script>
+    <script src="chart.js"></script>
+  </body>
 </html>

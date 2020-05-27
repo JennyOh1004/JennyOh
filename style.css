@@ -11,7 +11,7 @@ body {
     #e8198b 100%
   );
   background-repeat: no-repeat, repeat;
-  height: 500vh;
+  height: 600vh;
   padding: 20px;
 }
 @keyframes jenny {
@@ -24,9 +24,11 @@ body {
 }
 
 /* .logo {
-  width: 60px;
-  height: 60px;
+  padding: 5px;
+  width: 50px;
+  height: 50px;
   color: #fff;
+  position: fixed;
 } */
 
 main {
@@ -64,22 +66,52 @@ main {
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
 }
 
-nav {
-  float: right;
+a {
+  text-decoration: none;
+  z-index: 5;
+  position: relative;
 }
 
-a {
+.scrolled {
+  background-color: #fff;
+  transition: 0.3s;
+}
+
+.scrolled a {
+  color: #000;
+}
+
+.nav {
+  position: fixed;
+  right: 0;
+  top: 0;
+  padding: 1rem;
+  transition: 0.3s;
+  width: 100%;
+  z-index: 5;
+}
+
+ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  top: 0;
+}
+
+li a {
   text-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
-  color: #fff;
   text-decoration: none;
-  padding: 15px;
-  letter-spacing: 2px;
+  padding: 20px;
+  letter-spacing: 2.5px;
   text-transform: uppercase;
   font-size: 15px;
   font-family: "Harmattan", sans-serif;
+  z-index: 5;
+  color: #fff;
 }
 
-a:hover {
+li a:hover {
   color: #000;
   transition: linear all 0.3s;
   pointer-events: cursor;
@@ -93,24 +125,40 @@ a:hover {
 
 #about {
   margin-top: 20%;
+  /* opacity: 0;
+  transition: 0.7s opacity; */
 }
+/* 
+#about.is-visible {
+  opacity: 1;
+  transition: none;
+} */
 
 .about_j {
   font-size: 150px;
   padding-right: 50px;
   font-family: "Krona One", sans-serif;
-  letter-spacing: 1px;
+  letter-spacing: 2px;
   /* width: 40%; */
+  padding-top: 100px;
   text-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
 }
 
 .about_p {
   margin-top: 20px;
   padding: 10px;
-  font-size: 50px;
+  font-size: 40px;
   /* width: 60%; */
   font-family: "Krona One", sans-serif;
   letter-spacing: 1px;
+}
+
+.about__creative {
+  padding-left: 900px;
+}
+
+.about__uf {
+  padding-left: 1000px;
 }
 
 .profile {
@@ -124,10 +172,26 @@ a:hover {
   margin-top: 15%;
 }
 
+.project__h1,
+.contact__h1 {
+  font-size: 150px;
+  letter-spacing: 2px;
+  font-family: "Krona One", sans-serif;
+  letter-spacing: 1px;
+  padding-top: 100px;
+  text-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+
 ion-icon {
   font-size: 28px;
-  padding: 10px;
+  padding: 20px;
   margin-left: 20px;
+  color: #fff;
+}
+
+ion-icon:hover {
+  color: #000;
+  transition: linear all 0.2s;
 }
 
 span {
@@ -136,12 +200,13 @@ span {
 
 .circle {
   position: fixed;
-  z-index: 1;
+  z-index: 0;
   border-radius: 50%;
-  width: 200px;
-  height: 200px;
+  width: 180px;
+  height: 180px;
   background: white;
   mix-blend-mode: difference;
+  opacity: 0.8;
 }
 
 .skills_h1 {
@@ -150,17 +215,41 @@ span {
   font-family: "Krona One", sans-serif;
   letter-spacing: 1px;
   /* width: 40%; */
+  padding-top: 200px;
   text-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
 }
 .skills {
-  padding: 10px 50px;
+  width: 300px;
   text-align: center;
+}
+
+.chartContainer {
+  width: 180px;
+  height: 180px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 30px;
+  margin: 50px;
+}
+
+.chartContainer canvas {
+  padding: 40px;
+  z-index: 3;
+}
+
+.chartFont {
+  font-size: 13px;
+  font-family: "Krona One", sans-serif;
+  color: #fff;
+  letter-spacing: 1px;
+  padding-top: 50px;
 }
 
 /* animation */
 .slide-right {
   animation: 1s slide-right 2s forwards;
-    transform:translateX(-100%);
+  transform: translateX(-100%);
 }
 
 .slide-up {
@@ -169,18 +258,69 @@ span {
 
 @keyframes slide-right {
   to {
-    transform:translateX(0);
+    transform: translateX(0);
   }
 }
 
 @keyframes slide-up {
   from {
     margin-top: 100%;
-    height: 300%; 
+    height: 300%;
   }
 
   to {
     margin-top: 0%;
     height: 100%;
   }
+}
+
+/* contact */
+
+.contact__info {
+  width: 500px;
+  height: 500px;
+  background: rgba(255, 255, 255, 0.5);
+  margin: 0 auto;
+  border-radius: 50%;
+  padding: 10px;
+  z-index: 5;
+}
+
+.contact__info:before {
+  background: rgba(234, 159, 230, 0.3);
+  top: 10px;
+  left: 200px;
+  /* position: absolute; */
+}
+
+form {
+  margin: 120px 10%;
+  z-index: 5;
+}
+
+input,
+textarea {
+  width: 90%;
+  height: 30px;
+  background: rgba(255, 255, 255, 0.3);
+  border: 1px solid #f2f1eb;
+  margin: 0 0 15px 15px;
+  border-radius: 10px;
+  color: #000;
+  padding: 5px;
+  transition: 0.5s ease-in;
+  z-index: 6;
+}
+
+textarea {
+  height: 80px;
+}
+
+input:focus,
+textarea:focus {
+  outline: 0;
+  border-top: 5px solid #eae8e4;
+  border-right: 5px solid #eae8e4;
+  border-bottom: 5px solid #a7c242;
+  border-left: 5px solid #eae8e4;
 }
