@@ -12,7 +12,7 @@ body {
     #e8198b 100%
   );
   background-repeat: no-repeat, repeat;
-  height: 700vh;
+  height: 1400vh;
   padding: 20px;
 }
 @keyframes jenny {
@@ -292,6 +292,20 @@ span {
 .main_project {
   width: 50%;
   height: auto;
+  margin: 30px;
+}
+
+.main_project_1 {
+  width: 50%;
+  height: auto;
+  margin: 30px;
+  float: right;
+  padding-top: 100px;
+  padding-bottom: 50px;
+}
+
+.clear {
+  clear: both;
 }
 
 .main__h2 {
@@ -302,14 +316,31 @@ span {
 }
 
 .main__p {
-  margin-top: 8%;
+  margin-top: 15%;
   font-family: "Krona One", sans-serif;
   font-size: 35px;
   letter-spacing: 2px;
   color: #fff;
-  width: 30%;
+  width: 40%;
   float: right;
-  margin-left: 20px;
+  margin-left: 0px;
+}
+
+.flixter_p {
+  margin-top: 40%;
+  font-family: "Krona One", sans-serif;
+  font-size: 35px;
+  letter-spacing: 2px;
+  color: #fff;
+  width: 40%;
+  float: right;
+  letter-spacing: 5px;
+  line-height: 4rem;
+}
+
+img {
+  padding-top: 150px;
+  padding-bottom: 150px;
 }
 
 /* contact */
@@ -322,6 +353,7 @@ span {
 }
 
 .contact__bg {
+  position: relative;
   width: 400px;
   height: 400px;
   background: rgba(159, 218, 173, 0.5);
@@ -332,6 +364,7 @@ span {
 }
 
 .contact__bg2 {
+  position: relative;
   width: 400px;
   height: 400px;
   background: rgba(159, 218, 173, 0.5);
@@ -342,6 +375,7 @@ span {
 }
 
 .contact__info {
+  position: relative;
   width: 500px;
   height: 500px;
   background: rgba(255, 255, 255, 0.5);
@@ -399,8 +433,10 @@ input.button {
   height: 40%;
   border-radius: 8px;
   text-align: center;
-  color: #000;
+  color: #596164;
   padding: 10px;
   float: right;
-  letter-spacing: 2px;
+  letter-spacing: 3px;
+  outline: none;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
 }
