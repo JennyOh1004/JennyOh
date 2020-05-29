@@ -17,24 +17,29 @@
         <!-- <img class="logo" src="logo.png" /> -->
         Logo
       </div>
-    </header>
 
-    <nav class="nav" id="nav">
-      <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
+      <nav class="nav" id="nav">
+        <ul>
+          <li><a data-page="home" href="#home">Home</a></li>
+          <li><a data-page="about" href="#about">About</a></li>
+          <li><a data-page="projects" href="#projects">Projects</a></li>
+          <li><a data-page="contact" href="#contact">Contact</a></li>
+          <div class="bubble"></div>
+        </ul>
+      </nav>
+    </header>
 
     <div>
       <main>
-        <h2 class="home_h2 slide-up">
-          Hi there, My name is <span style="color: #b49fda;">Jenny</span>. I'm a
-          <span style="color: #b49fda;">Web Developer</span> based in the bay
-          area focused on <span style="color: #b49fda;">Front-end</span> Web
-          development.
+        <section data-index="0" class="home">
+        <h2 class="home_h2">
+          <span style="color: #000; font-size: 130px;"> Hi </span>there,
+          <div class="intro_text">
+            My name is <span style="color: #b49fda;">Jenny</span>. I'm a
+            <span style="color: #b49fda;">Web Developer</span> based in the bay
+            area focused on <span style="color: #b49fda;">Front-end</span> Web
+            development.
+          </div>
         </h2>
 
         <!-- <button class="home_button">Learn More</button> -->
@@ -49,44 +54,48 @@
             <ion-icon name="mail"></ion-icon>
           </a>
         </div>
-      </main>
+        </section>
     </div>
 
     <div id="about" class="about">
+      <section data-index="1" class="about">
       <h1 id="about__title" class="about_j">
         About<span style="color: #fff;">.</span>
       </h1>
-      <p class="about_p">
+      <p class="about_p intro_text">
         I love to build
-        <span style="color: #e2ebf0;"
+        <span class="intro_text" style="color: #e2ebf0;"
           >aesthetically
           <span style="color: #000; font-size: 75px;" ;>p</span>leasing,</span
         >
       </p>
       <p class="about_p">
         <span class="about__creative" style="color: #fbfcdb;"
-          ><span style="color: #000; font-size: 75px;" ;>c</span>reative,
+          ><span class="intro_text" style="color: #000; font-size: 75px;" ;
+            >c</span
+          >reative,
         </span>
       </p>
       <p class="about_p">
-        <span class="about__uf" style="color: #deecdd;"
+        <span class="about__uf intro_text" style="color: #deecdd;"
           ><span style="color: #000; font-size: 75px;" ;>u</span
           >ser-friendly</span
         >
       </p>
-      <p class="about_p">
+      <p class="about_p intro_text">
         web pages and web applications.
       </p>
 
-      <p class="about_p">
+      <p class="about_p intro_text">
         I am focused on writing clean, meaningful and efficient code. I also
         enjoy to create intuitive and minimal designs.
       </p>
+    </section>
     </div>
 
     <div class="skills">
       <h1 class="skills_h1">Skills<span style="color: #fff;">.</span></h1>
-      <div class="chartContainer">
+      <div class="chartContainer intro_text">
         <canvas id="myHtml"></canvas>
         <canvas id="myCss"></canvas>
         <canvas id="myJs"></canvas>
@@ -96,67 +105,84 @@
       </div>
     </div>
 
+
     <div id="projects" class="projects">
+      <section data-index="2" class="projects">
       <h1 class="project__h1">Projects<span style="color: #fff;">.</span></h1>
 
       <div class="project__default">
-        <img class="main_project" src="assets/projects/main.png" />
-        <p class="main__p">
+        <img class="main_project intro_text" src="assets/projects/main.png" />
+        <p class="main__p intro_text">
           <span class="main__h2">Metif Korea</span><br />
           Designed a consumer friendly hair cosmetics.
         </p>
-        <img class="main_project_1" src="assets/projects/2.png" />
-        <p class="main__p">
+        <img class="main_project_1 intro_text" src="assets/projects/2.png" />
+        <p class="main__p intro_text">
           <br /><br />
           Developed and Designed custom themes to improve
-          <span style="color: #000;">effectiveness</span> and usability of
-          website.
+          <span style="color: #000;">effectiveness</span> and
+          <span style="color: #000;">usability</span> of website.
         </p>
-        <img class="main_project" src="assets/projects/6.png" />
-        <p class="main__p">
+        <img class="main_project intro_text" src="assets/projects/6.png" />
+        <p class="main__p intro_text">
           <br /><br />
-          <span style="color: #fbfcdb;"
+          <span class="intro_text" style="color: #fbfcdb;"
             >User-friendly,<br />
             Accessible</span
           >
         </p>
-        <img class="main_project_1" src="assets/projects/8.png" />
+        <img class="main_project_1 intro_text" src="assets/projects/8.png" />
         <div class="clear"></div>
       </div>
       <div class="clear"></div>
       <br />
 
       <div class="project__default">
-        <img class="main_project" src="assets/projects/flixter1.png" />
-        <p class="main__p">
+        <img
+          class="main_project intro_text"
+          src="assets/projects/flixter1.png"
+        />
+        <p class="main__p intro_text">
           <span class="main__h2">Flixter Yoga</span><br />
           Developed a video streaming platform.
         </p>
-        <img class="main_project_1" src="assets/projects/flixter2.png" />
-        <p class="main__p">
+        <img
+          class="main_project_1 intro_text"
+          src="assets/projects/flixter2.png"
+        />
+        <p class="main__p intro_text">
           <br /><br />
           Includes featuring credit card payment capabilites and complex
           <span style="color: #000;">User interfaces</span>.
         </p>
-        <img class="main_project" src="assets/projects/flixter3.png" />
-        <p class="flixter_p">
+        <img
+          class="main_project intro_text"
+          src="assets/projects/flixter3.png"
+        />
+        <p class="flixter_p intro_text">
           <br /><br />
           Truth <br />
-          <span style="color: #000;">Goodness</span> <br />Beauty
+          <span class="intro_text" style="color: #000;">Goodness</span>
+          <br />Beauty
         </p>
         <div class="clear"></div>
         <br />
-        <img class="main_project_1" src="assets/projects/flixter4.png" />
+        <img
+          class="main_project_1 intro_text"
+          src="assets/projects/flixter4.png"
+        />
         <div class="clear"></div>
       </div>
+      </section>
     </div>
 
     <div id="contact" class="contact">
+      <section data-index="3" class="contact">
       <div class="clear"></div>
       <h1 class="contact__h1">Contact<span style="color: #fff;">.</span></h1>
 
-      <h2 class="contact__2">Say Hello To Jenny!</h2>
-      <div class="contact__info">
+      <h2 class="contact__2 intro_text">Say Hello To Jenny!</h2>
+      <div class="contact__info intro_text">
         <form>
           <input name="name" placeholder="Your Name" required /><br />
           <input name="email" placeholder="You@example.com" required /><br />
@@ -172,6 +198,7 @@
         <div class="contact__bg"></div>
         <div class="contact__bg2"></div>
       </div>
+      </section>
     </div>
 
     <div class="circle" id="circle"></div>

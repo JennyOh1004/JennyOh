@@ -113,6 +113,39 @@ window.addEventListener("scroll", (e) => {
 //   }
 // });
 
+//smooth effect
+
+// function smoothScroll(target, duration) {
+//   var target = document.querySelector(target);
+//   var targetPosition = target.getBoundingClientRect().top; //top 만 필요
+//   var startPosition = window.pageYOffset;
+//   var distance = targetPosition - startPosition;
+//   var startTime = null;
+//   console.log(startPosition);
+
+//   function animation(currentTime) {
+//     if (startTime === null) startTime = currentTime;
+//     var timeElapsed = currentTime - startTime;
+//     var run = ease(timeElapsed, startPosition, distance, duration);
+//     window.scrollTo(0, run);
+//     if (timeElapsed < duration) requestAnimationFrame(animation);
+//   }
+
+//   function ease(t, b, c, d) {
+//     t /= d / 2;
+//     if (t < 1) return (c / 2) * t * t * +b;
+//     t--;
+//     return (-b / 2) * (t * (t - 2) - 1) + b;
+//   }
+//   requestAnimationFrame(animation);
+// }
+
+// var section1 = document.querySelector("#home__h2");
+
+// section1.addEventListener("scroll", (e) => {
+//   smoothScroll("#home__h2", 2000);
+// });
+
 //-------------------------->
 
 // function scrollAppear() {
@@ -129,8 +162,6 @@ window.addEventListener("scroll", (e) => {
 
 // window.addEventListener("scroll", scrollAppear);
 
-//On Scroll Effect
-
 function animateOnScroll(target, triggerPosition, reversible = false) {
   let targetEl = document.querySelectorAll(target);
   targetEl.forEach((el) => {
@@ -145,27 +176,4 @@ function animateOnScroll(target, triggerPosition, reversible = false) {
 }
 window.addEventListener("scroll", () => {
   animateOnScroll(".intro_text", 0.8, true);
-});
-
-// nav effect
-
-const sections = document.querySelectorAll("section");
-const bubble = document.querySelector(".bubble");
-// const gradients = [""];
-
-const options = {
-  threshold: 0.7,
-};
-
-let observer = new IntersectionObserver(navCheck, options);
-
-function navCheck(entries) {
-  entries.forEach((entry) => {
-    console.log(entry);
-    // const className = entry.target.className;
-    // console.log(className);
-  });
-}
-sections.forEach((section) => {
-  observer.observe(section);
 });

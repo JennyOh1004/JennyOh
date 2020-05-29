@@ -92,6 +92,11 @@ a {
   z-index: 4;
 }
 
+.bubble {
+  position: absolute;
+  z-index: -2;
+}
+
 ul {
   list-style-type: none;
   display: flex;
@@ -233,11 +238,12 @@ span {
   justify-content: space-between;
   padding: 30px;
   margin: 50px;
+  z-index: 5;
 }
 
 .chartContainer canvas {
   padding: 40px;
-  z-index: 3;
+  z-index: 5;
 }
 
 .chartFont {
@@ -439,4 +445,17 @@ input.button {
   letter-spacing: 3px;
   outline: none;
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+
+/* scroll effect */
+
+.intro_text {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: 0.5s all ease-in-out;
+}
+
+.intro_appear {
+  opacity: 1;
+  transform: translateY(0px);
 }
