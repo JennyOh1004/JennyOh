@@ -417,6 +417,9 @@ textarea {
   padding: 5px;
   transition: 0.5s ease-in;
   cursor: pointer;
+  font-family: "Harmattan", sans-serif;
+  font-size: 16px;
+  letter-spacing: 2px;
 }
 
 textarea {

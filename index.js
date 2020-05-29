@@ -146,26 +146,3 @@ function animateOnScroll(target, triggerPosition, reversible = false) {
 window.addEventListener("scroll", () => {
   animateOnScroll(".intro_text", 0.8, true);
 });
-
-// nav effect
-
-const sections = document.querySelectorAll("section");
-const bubble = document.querySelector(".bubble");
-// const gradients = [""];
-
-const options = {
-  threshold: 0.7,
-};
-
-let observer = new IntersectionObserver(navCheck, options);
-
-function navCheck(entries) {
-  entries.forEach((entry) => {
-    console.log(entry);
-    // const className = entry.target.className;
-    // console.log(className);
-  });
-}
-sections.forEach((section) => {
-  observer.observe(section);
-});
