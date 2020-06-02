@@ -1,6 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Harmattan&family=Krona+One&family=Notable&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat+Subrayada:wght@700&family=Quicksand:wght@300&display=swap");
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   /* background-image: linear-gradient(to top, #c7eafd 0%, #e8198b 100%); */
   background-image: linear-gradient(
@@ -12,8 +18,6 @@ body {
     #e8198b 100%
   );
   background-repeat: no-repeat, repeat;
-  height: 1400vh;
-  padding: 20px;
 }
 @keyframes jenny {
   from {
@@ -33,23 +37,26 @@ body {
 } */
 
 main {
+  display: flex;
+  flex-direction: column;
   color: #fff;
-  width: 90%;
-  margin-top: 15%;
-  margin-left: 10%;
+  width: 80%;
+  margin-top: 10%;
   font-family: "Krona One", sans-serif;
   text-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
 }
 
 .home_h1 {
-  font-size: 110px;
+  font-size: 4vw;
   letter-spacing: 2px;
+  width: 0%;
 }
 
 .home_h2 {
-  font-size: 55px;
+  font-size: 3.5vw;
   letter-spacing: 2px;
-  width: 90%;
+  width: 80%;
+  margin: 0 auto;
 }
 
 .home_button {
@@ -86,15 +93,10 @@ a {
   position: fixed;
   right: 0;
   top: 0;
-  padding: 1rem;
+  padding: 1.5rem;
   transition: 0.3s;
   width: 100%;
   z-index: 4;
-}
-
-.bubble {
-  position: absolute;
-  z-index: -2;
 }
 
 ul {
@@ -123,48 +125,60 @@ li a:hover {
   pointer-events: cursor;
 }
 
-.bio {
-  width: 38%;
-  letter-spacing: 1px;
-  text-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
-}
-
 #about {
   margin-top: 20%;
-  /* opacity: 0;
-  transition: 0.7s opacity; */
 }
-/* 
-#about.is-visible {
-  opacity: 1;
-  transition: none;
-} */
 
 .about_j {
-  font-size: 150px;
+  margin: 0 auto;
+  font-size: 8vw;
   padding-right: 50px;
   font-family: "Krona One", sans-serif;
   letter-spacing: 2px;
   /* width: 40%; */
-  padding-top: 100px;
+  padding-top: 10%;
+  padding-bottom: 10%;
   text-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
 }
 
 .about_p {
-  margin-top: 20px;
-  padding: 10px;
-  font-size: 40px;
-  /* width: 60%; */
+  padding-top: 100px;
+  margin-right: auto;
+  margin: 0 auto;
+  font-size: 2vw;
+  width: 70vw;
   font-family: "Krona One", sans-serif;
   letter-spacing: 1px;
 }
 
-.about__creative {
-  padding-left: 500px;
+.about_p_one {
+  margin-top: 20px;
+  margin-right: auto;
+  padding-left: 120px;
+  font-size: 2vw;
+  width: 90vw;
+  font-family: "Krona One", sans-serif;
+  letter-spacing: 1px;
 }
 
-.about__uf {
-  padding-left: 800px;
+.about_p_two {
+  margin-top: 30px;
+  margin: 0 auto;
+  padding: 10px;
+  font-size: 2vw;
+  width: 30vw;
+  font-family: "Krona One", sans-serif;
+  letter-spacing: 1px;
+}
+
+.about_p_three {
+  margin-top: 20px;
+  margin-left: auto;
+  padding: 10px;
+  font-size: 2vw;
+  font-family: "Krona One", sans-serif;
+  letter-spacing: 1px;
+  width: 50vw;
 }
 
 .profile {
@@ -174,23 +188,28 @@ li a:hover {
   margin-right: 50px;
 }
 
-#projects {
-  margin-top: 15%;
-}
-
 .project__h1,
 .contact__h1 {
-  font-size: 150px;
+  margin: 0 auto;
+  color: #000;
+  font-size: 8vw;
   letter-spacing: 2px;
   font-family: "Krona One", sans-serif;
   letter-spacing: 1px;
-  padding-top: 100px;
-  padding-bottom: 100px;
+  padding-top: 15%;
+  padding-bottom: 10%;
   text-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
 }
 
+.icons {
+  display: flex;
+  flex-direction: row;
+  margin: 40px;
+  justify-content: center;
+}
+
 ion-icon {
-  font-size: 28px;
+  font-size: 1.6vw;
   padding: 20px;
   margin-left: 20px;
   color: #fff;
@@ -231,23 +250,28 @@ span {
 }
 
 .chartContainer {
-  width: 180px;
+  /* width: 180px; */
+  background: red;
   height: 180px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+
   padding: 30px;
   margin: 50px;
-  z-index: 5;
+  z-index: 2;
+  position: relative;
 }
 
 .chartContainer canvas {
   padding: 40px;
-  z-index: 5;
+  z-index: 2;
+  flex: 0 0 auto;
+  background: blue;
 }
 
 .chartFont {
-  font-size: 13px;
+  font-size: 15px;
   font-family: "Krona One", sans-serif;
   color: #fff;
   letter-spacing: 1px;
@@ -284,6 +308,21 @@ span {
 
 /* projects */
 
+#projects {
+  margin-top: 15%;
+}
+
+.image {
+  margin-right: auto;
+  width: 100vw;
+  padding-left: 100px;
+}
+
+.content {
+  margin-left: auto;
+  width: 40vw;
+}
+
 .project__default {
   padding: 10px;
 }
@@ -298,14 +337,13 @@ span {
 .main_project {
   width: 50%;
   height: auto;
-  margin: 30px;
+  margin: 10px;
 }
 
 .main_project_1 {
   width: 50%;
   height: auto;
   margin: 30px;
-  float: right;
   padding-top: 100px;
   padding-bottom: 50px;
 }
@@ -316,30 +354,27 @@ span {
 
 .main__h2 {
   color: #000;
-  font-size: 55px;
+  font-size: 3.5vw;
   padding-bottom: 20px;
   font-family: "Montserrat Subrayada", sans-serif;
 }
 
 .main__p {
-  margin-top: 15%;
   font-family: "Krona One", sans-serif;
-  font-size: 35px;
+  font-size: 2vw;
   letter-spacing: 2px;
   color: #fff;
-  width: 40%;
-  float: right;
-  margin-left: 0px;
+  width: 90%;
+  margin-right: auto;
 }
 
 .flixter_p {
-  margin-top: 40%;
+  margin-top: 10%;
   font-family: "Krona One", sans-serif;
-  font-size: 35px;
+  font-size: 3vw;
   letter-spacing: 2px;
   color: #fff;
   width: 40%;
-  float: right;
   letter-spacing: 5px;
   line-height: 4rem;
 }
@@ -352,10 +387,11 @@ img {
 /* contact */
 
 .contact__2 {
-  font-size: 50px;
+  font-size: 3vw;
   font-family: "Krona One", sans-serif;
   color: #000;
   padding: 10px;
+  margin-bottom: 15%;
 }
 
 .contact__bg {
@@ -390,6 +426,7 @@ img {
   padding: 10px;
   z-index: 3;
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  margin-bottom: 400px;
 }
 
 .contact__info:before {
@@ -441,10 +478,11 @@ input.button {
   width: 40%;
   height: 40%;
   border-radius: 8px;
-  text-align: center;
   color: #596164;
   padding: 10px;
-  float: right;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
   letter-spacing: 3px;
   outline: none;
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
@@ -461,4 +499,91 @@ input.button {
 .intro_appear {
   opacity: 1;
   transform: translateY(0px);
+}
+
+/* section */
+
+section {
+  display: flex;
+  flex-direction: column;
+}
+
+.one {
+  width: 90vw;
+  display: flex;
+  flex-direction: column;
+}
+
+.two {
+  width: 90vw;
+  color: #000;
+  display: flex;
+  flex-direction: column;
+}
+
+.three {
+  width: 90vw;
+  color: #000;
+  display: flex;
+  flex-direction: column;
+}
+
+footer {
+  text-align: center;
+  padding: 10px;
+  color: #596164;
+  background: #fff;
+  width: 100vw;
+  font-size: 0.8vw;
+  letter-spacing: 2px;
+  text-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+
+.contact__container {
+  width: 100%;
+}
+
+/* Responsive web design  */
+
+@media only screen and (max-width: 768px) {
+  body {
+    width: 100vw;
+  }
+
+  .one {
+    margin-top: 40%;
+  }
+
+  .flixter_p {
+    margin-top: -50px;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  body {
+    width: 100vw;
+  }
+
+  .circle {
+    display: none;
+  }
+
+  nav {
+    display: none;
+  }
+
+  .contact__info {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    margin: 30px;
+  }
+
+  form {
+    margin: 50px 10%;
+  }
+  input.button {
+    width: 30%;
+    height: 40px;
+  }
 }

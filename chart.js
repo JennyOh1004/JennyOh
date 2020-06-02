@@ -25,6 +25,7 @@ var myChart = new Chart(riskMeterctx, {
     title: {
       display: true,
       text: "HTML",
+      fontSize: 17,
     },
   },
 });
@@ -34,6 +35,7 @@ Chart.defaults.global.legend.display = false;
 // Create Chart
 var riskMeterctx = document.getElementById("myCss");
 var myChart = new Chart(riskMeterctx, {
+  responsive: true,
   type: "doughnut",
   data: {
     labels: ["CSS"],
@@ -53,6 +55,7 @@ var myChart = new Chart(riskMeterctx, {
     title: {
       display: true,
       text: "CSS",
+      fontSize: 17,
     },
   },
 });
@@ -62,6 +65,7 @@ Chart.defaults.global.legend.display = false;
 // Create Chart
 var riskMeterctx = document.getElementById("myJs");
 var myChart = new Chart(riskMeterctx, {
+  responsive: true,
   type: "doughnut",
   data: {
     labels: ["JS"],
@@ -81,6 +85,7 @@ var myChart = new Chart(riskMeterctx, {
     title: {
       display: true,
       text: "JavaScript",
+      fontSize: 17,
     },
   },
 });
@@ -90,6 +95,7 @@ Chart.defaults.global.legend.display = false;
 // Create Chart
 var riskMeterctx = document.getElementById("myReact");
 var myChart = new Chart(riskMeterctx, {
+  responsive: true,
   type: "doughnut",
   data: {
     labels: ["React"],
@@ -109,6 +115,7 @@ var myChart = new Chart(riskMeterctx, {
     title: {
       display: true,
       text: "React",
+      fontSize: 17,
     },
   },
 });
@@ -118,6 +125,7 @@ Chart.defaults.global.legend.display = false;
 // Create Chart
 var riskMeterctx = document.getElementById("myRuby");
 var myChart = new Chart(riskMeterctx, {
+  responsive: true,
   type: "doughnut",
   data: {
     labels: ["Ruby"],
@@ -137,6 +145,7 @@ var myChart = new Chart(riskMeterctx, {
     title: {
       display: true,
       text: "Ruby",
+      fontSize: 17,
     },
   },
 });
@@ -146,6 +155,7 @@ Chart.defaults.global.legend.display = false;
 // Create Chart
 var riskMeterctx = document.getElementById("myRails");
 var myChart = new Chart(riskMeterctx, {
+  responsive: true,
   type: "doughnut",
   data: {
     labels: ["Rails"],
@@ -165,6 +175,7 @@ var myChart = new Chart(riskMeterctx, {
     title: {
       display: true,
       text: "Rails",
+      fontSize: 17,
     },
   },
 });

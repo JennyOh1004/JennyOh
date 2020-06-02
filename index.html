@@ -20,20 +20,20 @@
 
       <nav class="nav" id="nav">
         <ul>
-          <li><a data-page="home" href="#home">Home</a></li>
-          <li><a data-page="about" href="#about">About</a></li>
-          <li><a data-page="projects" href="#projects">Projects</a></li>
-          <li><a data-page="contact" href="#contact">Contact</a></li>
-          <div class="bubble"></div>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+          
         </ul>
       </nav>
     </header>
 
-    <div>
       <main>
-        <section data-index="0" class="home">
+        <section class="home">
+          <div class="one">
         <h2 class="home_h2">
-          <span style="color: #000; font-size: 130px;"> Hi </span>there,
+          <span style="color: #000; font-size: 9vw;"> Hi </span>there,
           <div class="intro_text">
             My name is <span style="color: #b49fda;">Jenny</span>. I'm a
             <span style="color: #b49fda;">Web Developer</span> based in the bay
@@ -43,7 +43,7 @@
         </h2>
 
         <!-- <button class="home_button">Learn More</button> -->
-        <div class="icons">
+        <div class="icons intro_text">
           <a href="https://www.linkedin.com/in/seulkioh1004/">
             <ion-icon name="logo-linkedin"></ion-icon>
           </a>
@@ -54,31 +54,33 @@
             <ion-icon name="mail"></ion-icon>
           </a>
         </div>
+      </div>
         </section>
-    </div>
+ 
 
-    <div id="about" class="about">
+    <div id="about" class="about intro_text">
       <section data-index="1" class="about">
+        <div class="two">
       <h1 id="about__title" class="about_j">
         About<span style="color: #fff;">.</span>
       </h1>
-      <p class="about_p intro_text">
+      <p class="about_p_one intro_text">
         I love to build
         <span class="intro_text" style="color: #e2ebf0;"
           >aesthetically
-          <span style="color: #000; font-size: 75px;" ;>p</span>leasing,</span
+          <span style="color: #000; font-size: 3.5vw;" ;>p</span>leasing,</span
         >
       </p>
-      <p class="about_p">
-        <span class="about__creative" style="color: #fbfcdb;"
-          ><span class="intro_text" style="color: #000; font-size: 75px;" ;
+      <p class="about_p_two intro_text">
+        <span style="color: #fbfcdb;"
+          ><span class="intro_text" style="color: #000; font-size: 3.5vw;" ;
             >c</span
           >reative,
         </span>
       </p>
-      <p class="about_p">
-        <span class="about__uf intro_text" style="color: #deecdd;"
-          ><span style="color: #000; font-size: 75px;" ;>u</span
+      <p class="about_p_three">
+        <span class="intro_text" style="color: #deecdd;"
+          ><span style="color: #000; font-size: 3.5vw;" ;>u</span
           >ser-friendly</span
         >
       </p>
@@ -90,10 +92,12 @@
         I am focused on writing clean, meaningful and efficient code. I also
         enjoy to create intuitive and minimal designs.
       </p>
+    </div>
     </section>
     </div>
 
-    <div class="skills">
+    
+    <!-- <div class="skills">
       <h1 class="skills_h1">Skills<span style="color: #fff;">.</span></h1>
       <div class="chartContainer intro_text">
         <canvas id="myHtml"></canvas>
@@ -103,84 +107,124 @@
         <canvas id="myRuby"></canvas>
         <canvas id="myRails"></canvas>
       </div>
-    </div>
+    </div> -->
 
 
     <div id="projects" class="projects">
-      <section data-index="2" class="projects">
+      <section class="projects">
+        <div class="three">
       <h1 class="project__h1">Projects<span style="color: #fff;">.</span></h1>
 
       <div class="project__default">
+        <div class="image">
         <img class="main_project intro_text" src="assets/projects/main.png" />
+        </div>
+
+        <div class="content">
         <p class="main__p intro_text">
           <span class="main__h2">Metif Korea</span><br />
           Designed a consumer friendly hair cosmetics.
         </p>
+        </div>
+
+        <div class="image">
         <img class="main_project_1 intro_text" src="assets/projects/2.png" />
+      </div>
+      <div class="content">
         <p class="main__p intro_text">
-          <br /><br />
+          <br />
           Developed and Designed custom themes to improve
           <span style="color: #000;">effectiveness</span> and
           <span style="color: #000;">usability</span> of website.
         </p>
+      </div>
+
+      <div class="image">
         <img class="main_project intro_text" src="assets/projects/6.png" />
+      </div>
+      
+      <div class="content">
         <p class="main__p intro_text">
           <br /><br />
           <span class="intro_text" style="color: #fbfcdb;"
             >User-friendly,</span><br />
             <span class="intro_text" style="color: #fff">Accessible</span>
         </p>
+        </div>
+
+        <div class="image">
         <img class="main_project_1 intro_text" src="assets/projects/8.png" />
-        <div class="clear"></div>
+        <div class="clear"></div>  
+      </div>
       </div>
       <div class="clear"></div>
       <br />
-
+ 
       <div class="project__default">
+        <div class="image">
         <img
           class="main_project intro_text"
           src="assets/projects/flixter1.png"
         />
+        </div>
+
+        <div class="content">
         <p class="main__p intro_text">
           <span class="main__h2">Flixter Yoga</span><br />
           Developed a video streaming platform.
         </p>
+        </div>
+
+        <div class="image">
         <img
           class="main_project_1 intro_text"
           src="assets/projects/flixter2.png"
         />
+        </div>
+
+        <div class="content">
         <p class="main__p intro_text">
           <br /><br />
           Includes featuring credit card payment capabilites and complex
           <span style="color: #000;">User interfaces</span>.
         </p>
+      </div>
+
+        <div class="image">
         <img
           class="main_project intro_text"
           src="assets/projects/flixter3.png"
         />
+        </div>
+
+        <div class="content">
         <p class="flixter_p intro_text">
-          <br /><br />
+          <br />
           Truth <br />
           <span class="intro_text" style="color: #000;">Goodness</span>
           <br />Beauty
         </p>
+      </div>
+
         <div class="clear"></div>
         <br />
+        <div class="image">
         <img
           class="main_project_1 intro_text"
           src="assets/projects/flixter4.png"
         />
+        </div>
         <div class="clear"></div>
       </div>
+    </div>
       </section>
     </div>
 
     <div id="contact" class="contact">
-      <section data-index="3" class="contact">
-      <div class="clear"></div>
+      <section class="contact">
       <h1 class="contact__h1">Contact<span style="color: #fff;">.</span></h1>
-
       <h2 class="contact__2 intro_text">Say Hello To Jenny!</h2>
+      <div class="contact__container">
       <div class="contact__info intro_text">
         <form>
           <input name="name" placeholder="Your Name" required /><br />
@@ -194,14 +238,22 @@
           ></textarea>
           <input name="submit" type="submit" value="Send" class="button" />
         </form>
-        <div class="contact__bg"></div>
-        <div class="contact__bg2"></div>
+        <!-- <div class="contact__bg"></div>
+        <div class="contact__bg2"></div> -->
       </div>
+    </div>
       </section>
     </div>
 
+    <footer>
+
+      © 2020 Jenny Oh 
+    </footer>
+
+    <!-- cursor effect -->
     <div class="circle" id="circle"></div>
     <script src="index.js"></script>
-    <script src="chart.js"></script>
+    <!-- <script src="chart.js"></script> -->
+
   </body>
 </html>
