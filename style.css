@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Harmattan&family=Krona+One&family=Notable&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat+Subrayada:wght@700&family=Quicksand:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Archivo+Black&family=Lexend+Tera&family=Luckiest+Guy&family=Montserrat:wght@700&display=swap");
 
 * {
   margin: 0;
@@ -95,6 +96,25 @@ section {
 }
 
 /* nav section */
+
+#logo {
+  color: #000;
+  font-size: 4vw;
+  padding: 1%;
+  font-family: "Luckiest Guy", cursive;
+  z-index: 5;
+}
+
+#logo a {
+  color: #0037ff;
+  z-index: 5;
+  position: fixed;
+}
+
+#logo a:hover {
+  color: #000;
+  transition: linear all 0.3s;
+}
 
 .nav {
   position: fixed;
