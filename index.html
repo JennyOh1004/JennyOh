@@ -4,256 +4,297 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="stylesheet" href="style.css" />
+    <!-- icons link  -->
     <script src="https://unpkg.com/ionicons@4.5.5/dist/ionicons.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+    <!-- favicon icon link -->
     <link rel="icon" type="image/x-icon" href="./assets/favicon.ico" />
+    <!-- stylesheet CSS file link  -->
+    <link rel="stylesheet" href="style.css" />
+
     <title>Jenny's World</title>
   </head>
-
+  <!-- start body section -->
   <body>
-    <header id="home">
-      <div>
-        <!-- <img class="logo" src="logo.png" /> -->
-        Logo
-      </div>
-
+    <!-- start header section -->
+    <header>
+      <!-- start nav section -->
       <nav class="nav" id="nav">
         <ul>
           <li><a href="#home">Home</a></li>
           <li><a href="#about">About</a></li>
           <li><a href="#projects">Projects</a></li>
           <li><a href="#contact">Contact</a></li>
-          
         </ul>
       </nav>
     </header>
 
-      <main>
-        <section class="home">
-          <div class="one">
-        <h2 class="home_h2">
-          <span style="color: #000; font-size: 9vw;"> Hi </span>there,
-          <div class="intro_text">
-            My name is <span style="color: #b49fda;">Jenny</span>. I'm a
-            <span style="color: #b49fda;">Web Developer</span> based in the bay
-            area focused on <span style="color: #b49fda;">Front-end</span> Web
-            development.
+    <!-- start main section -->
+    <main>
+      <!-- start home section -->
+      <section class="home">
+        <div class="one">
+          <h2 class="home_h2">
+            <span style="color: #000; font-size: 9vw;"> Hi </span>there,
+            <div class="intro_text">
+              My name is <span style="color: #b49fda;">Jenny</span>. I'm a
+              <span style="color: #b49fda;">Web Developer</span> based in the
+              bay area focused on
+              <span style="color: #b49fda;">Front-end</span> Web development.
+            </div>
+          </h2>
+
+          <!-- start contact icons section -->
+          <div class="icons intro_text">
+            <a href="https://www.linkedin.com/in/seulkioh1004/">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+            <a href="https://github.com/JennyOh1004">
+              <ion-icon name="logo-github"></ion-icon>
+            </a>
+            <a href="mailto:ohseulki1004@gmail.com">
+              <ion-icon name="mail"></ion-icon>
+            </a>
           </div>
-        </h2>
-
-        <!-- <button class="home_button">Learn More</button> -->
-        <div class="icons intro_text">
-          <a href="https://www.linkedin.com/in/seulkioh1004/">
-            <ion-icon name="logo-linkedin"></ion-icon>
-          </a>
-          <a href="https://github.com/JennyOh1004">
-            <ion-icon name="logo-github"></ion-icon>
-          </a>
-          <a href="mailto:ohseulki1004@gmail.com">
-            <ion-icon name="mail"></ion-icon>
-          </a>
         </div>
-      </div>
-        </section>
- 
+      </section>
 
-    <div id="about" class="about intro_text">
-      <section data-index="1" class="about">
-        <div class="two">
-      <h1 id="about__title" class="about_j">
-        About<span style="color: #fff;">.</span>
-      </h1>
-      <p class="about_p_one intro_text">
-        I love to build
-        <span class="intro_text" style="color: #e2ebf0;"
-          >aesthetically
-          <span style="color: #000; font-size: 3.5vw;" ;>p</span>leasing,</span
-        >
-      </p>
-      <p class="about_p_two intro_text">
-        <span style="color: #fbfcdb;"
-          ><span class="intro_text" style="color: #000; font-size: 3.5vw;" ;
-            >c</span
-          >reative,
-        </span>
-      </p>
-      <p class="about_p_three">
-        <span class="intro_text" style="color: #deecdd;"
-          ><span style="color: #000; font-size: 3.5vw;" ;>u</span
-          >ser-friendly</span
-        >
-      </p>
-      <p class="about_p intro_text">
-        web pages and web applications.
-      </p>
+      <!-- start about section -->
+      <section>
+        <div id="about" class="about intro_text">
+          <div class="two">
+            <h1 id="about__title" class="about_j">
+              About<span style="color: #fff;">.</span>
+            </h1>
 
-      <p class="about_p intro_text">
-        I am focused on writing clean, meaningful and efficient code. I also
-        enjoy to create intuitive and minimal designs.
-      </p>
-    </div>
-    </section>
-    </div>
+            <p class="about_p_one intro_text">
+              I love to build
+              <span class="intro_text" style="color: #e2ebf0;"
+                >aesthetically
+                <span style="color: #000; font-size: 3.5vw;" ;>p</span
+                >leasing,</span
+              >
+            </p>
 
-    
-    <!-- <div class="skills">
-      <h1 class="skills_h1">Skills<span style="color: #fff;">.</span></h1>
-      <div class="chartContainer intro_text">
-        <canvas id="myHtml"></canvas>
-        <canvas id="myCss"></canvas>
-        <canvas id="myJs"></canvas>
-        <canvas id="myReact"></canvas>
-        <canvas id="myRuby"></canvas>
-        <canvas id="myRails"></canvas>
-      </div>
-    </div> -->
+            <p class="about_p_two intro_text">
+              <span style="color: #fbfcdb;"
+                ><span
+                  class="intro_text"
+                  style="color: #000; font-size: 3.5vw;"
+                  ;
+                  >c</span
+                >reative,
+              </span>
+            </p>
+            <p class="about_p_three">
+              <span class="intro_text" style="color: #deecdd;"
+                ><span style="color: #000; font-size: 3.5vw;" ;>u</span
+                >ser-friendly</span
+              >
+            </p>
+            <p class="about_p intro_text">
+              web pages and web applications.
+            </p>
 
+            <p class="about_p intro_text">
+              I am focused on writing clean, meaningful and efficient code. I
+              also enjoy to create intuitive and minimal designs.
+            </p>
+          </div>
+        </div>
+      </section>
 
-    <div id="projects" class="projects">
+      <!-- start project section -->
       <section class="projects">
-        <div class="three">
-      <h1 class="project__h1">Projects<span style="color: #fff;">.</span></h1>
+        <div id="projects" class="projects">
+          <div class="three">
+            <h1 class="project__h1">
+              Projects<span style="color: #fff;">.</span>
+            </h1>
 
-      <div class="project__default">
-        <div class="image">
-        <img class="main_project intro_text" src="assets/projects/main.png" />
+            <!-- start Metif Korea Project section -->
+            <!-- Metif Korea content explanation -->
+            <div class="content">
+              <p class="main__p intro_text">
+                <span class="main__h2">Metif Korea</span><br />
+                Designed a consumer friendly hair cosmetics.
+              </p>
+            </div>
+
+            <!-- Metif Korea image -->
+            <div class="image">
+              <img
+                class="main_project intro_text"
+                src="assets/projects/main.png"
+                alt="Metif Korea main image"
+              />
+            </div>
+            <!-- Metif Korea content explanation -->
+            <div class="content">
+              <p class="main__p intro_text">
+                <br />
+                Developed and Designed custom themes to improve
+                <span style="color: #000;">effectiveness</span> and
+                <span style="color: #000;">usability</span> of website.
+              </p>
+            </div>
+
+            <!-- Metif Korea image -->
+            <div class="image">
+              <img
+                class="main_project intro_text"
+                src="assets/projects/2.png"
+                alt="Metif Korea website image"
+              />
+            </div>
+
+            <!-- Metif Korea content explanation -->
+            <div class="content">
+              <p class="main__p intro_text">
+                <br /><br />
+                <span class="intro_text" style="color: #fbfcdb;"
+                  >User-friendly</span
+                >
+              </p>
+            </div>
+
+            <!-- Metif Korea image -->
+            <div class="image">
+              <img
+                class="main_project intro_text"
+                src="assets/projects/6.png"
+                alt="Metif Korea website image"
+              />
+            </div>
+            <!-- Metif Korea content explanation -->
+            <div class="content">
+              <p class="main__p intro_text">
+                <span class="intro_text" style="color: #fff;">Accessible</span>
+              </p>
+            </div>
+            <!-- Metif Korea image -->
+            <div class="image">
+              <img
+                class="main_project intro_text"
+                src="assets/projects/8.png"
+                alt="Metif Korea website image"
+              />
+              <div class="clear"></div>
+            </div>
+
+            <!-- Metif Korea Project end  -->
+
+            <!-- second Project section = Flixter Yoga -->
+
+            <!-- Flixter content explanation -->
+
+            <div class="content">
+              <p class="main__p intro_text">
+                <span class="main__h2">Flixter Yoga</span><br />
+                Developed a video streaming platform.
+              </p>
+            </div>
+
+            <!-- Flixter Yoga image -->
+            <div class="image">
+              <img
+                class="main_project intro_text"
+                src="assets/projects/flixter1.png"
+                alt="Flixter Yoga main image"
+              />
+            </div>
+
+            <!-- Flixter content explanation -->
+            <div class="content">
+              <p class="main__p intro_text">
+                <br /><br />
+                Includes featuring credit card payment capabilites and complex
+                <span style="color: #000;">User interfaces</span>.
+              </p>
+            </div>
+
+            <!-- Flixter Yoga image -->
+            <div class="image">
+              <img
+                class="main_project intro_text"
+                src="assets/projects/flixter2.png"
+                alt="Flixter Yoga website image"
+              />
+            </div>
+            <!-- Flixter content explanation -->
+            <div class="content">
+              <p class="main__p intro_text">
+                <span style="color: #000;">User role management</span>
+              </p>
+            </div>
+            <!-- Flixter Yoga image -->
+            <div class="image">
+              <img
+                class="main_project intro_text"
+                src="assets/projects/flixter3.png"
+                alt="Flixter Yoga website image"
+              />
+            </div>
+            <!-- Flixter content explanation -->
+            <div class="content">
+              <p class="flixter_p intro_text">
+                <br />
+                Truth <br />
+                <span class="intro_text" style="color: #000;">Goodness</span>
+                <br />Beauty
+              </p>
+            </div>
+            <!-- Flixter Yoga image -->
+            <div class="image">
+              <img
+                class="main_project intro_text"
+                src="assets/projects/flixter4.png"
+                alt="Flixter Yoga website image"
+              />
+            </div>
+
+            <!-- Flixter Yoga Project end  -->
+          </div>
         </div>
-
-        <div class="content">
-        <p class="main__p intro_text">
-          <span class="main__h2">Metif Korea</span><br />
-          Designed a consumer friendly hair cosmetics.
-        </p>
-        </div>
-
-        <div class="image">
-        <img class="main_project_1 intro_text" src="assets/projects/2.png" />
-      </div>
-      <div class="content">
-        <p class="main__p intro_text">
-          <br />
-          Developed and Designed custom themes to improve
-          <span style="color: #000;">effectiveness</span> and
-          <span style="color: #000;">usability</span> of website.
-        </p>
-      </div>
-
-      <div class="image">
-        <img class="main_project intro_text" src="assets/projects/6.png" />
-      </div>
-      
-      <div class="content">
-        <p class="main__p intro_text">
-          <br /><br />
-          <span class="intro_text" style="color: #fbfcdb;"
-            >User-friendly,</span><br />
-            <span class="intro_text" style="color: #fff">Accessible</span>
-        </p>
-        </div>
-
-        <div class="image">
-        <img class="main_project_1 intro_text" src="assets/projects/8.png" />
-        <div class="clear"></div>  
-      </div>
-      </div>
-      <div class="clear"></div>
-      <br />
- 
-      <div class="project__default">
-        <div class="image">
-        <img
-          class="main_project intro_text"
-          src="assets/projects/flixter1.png"
-        />
-        </div>
-
-        <div class="content">
-        <p class="main__p intro_text">
-          <span class="main__h2">Flixter Yoga</span><br />
-          Developed a video streaming platform.
-        </p>
-        </div>
-
-        <div class="image">
-        <img
-          class="main_project_1 intro_text"
-          src="assets/projects/flixter2.png"
-        />
-        </div>
-
-        <div class="content">
-        <p class="main__p intro_text">
-          <br /><br />
-          Includes featuring credit card payment capabilites and complex
-          <span style="color: #000;">User interfaces</span>.
-        </p>
-      </div>
-
-        <div class="image">
-        <img
-          class="main_project intro_text"
-          src="assets/projects/flixter3.png"
-        />
-        </div>
-
-        <div class="content">
-        <p class="flixter_p intro_text">
-          <br />
-          Truth <br />
-          <span class="intro_text" style="color: #000;">Goodness</span>
-          <br />Beauty
-        </p>
-      </div>
-
-        <div class="clear"></div>
-        <br />
-        <div class="image">
-        <img
-          class="main_project_1 intro_text"
-          src="assets/projects/flixter4.png"
-        />
-        </div>
-        <div class="clear"></div>
-      </div>
-    </div>
       </section>
-    </div>
+    </main>
 
-    <div id="contact" class="contact">
-      <section class="contact">
-      <h1 class="contact__h1">Contact<span style="color: #fff;">.</span></h1>
-      <h2 class="contact__2 intro_text">Say Hello To Jenny!</h2>
-      <div class="contact__container">
-      <div class="contact__info intro_text">
-        <form>
-          <input name="name" placeholder="Your Name" required /><br />
-          <input name="email" placeholder="You@example.com" required /><br />
-          <textarea
-            rows="4"
-            cols="50"
-            name="message"
-            placeholder="Your Message"
-            required
-          ></textarea>
-          <input name="submit" type="submit" value="Send" class="button" />
-        </form>
-        <!-- <div class="contact__bg"></div>
-        <div class="contact__bg2"></div> -->
+    <!-- start contact section  -->
+    <section class="contact">
+      <div id="contact" class="contact">
+        <div class="four">
+          <h1 class="contact__h1">
+            Contact<span style="color: #fff;">.</span>
+          </h1>
+          <h2 class="contact__2 intro_text">Say Hello To Jenny!</h2>
+          <div class="contact__info intro_text">
+            <form>
+              <input name="name" placeholder="Your Name" required /><br />
+              <input
+                name="email"
+                placeholder="You@example.com"
+                required
+              /><br />
+              <textarea
+                rows="4"
+                cols="50"
+                name="message"
+                placeholder="Your Message"
+                required
+              ></textarea>
+              <input name="submit" type="submit" value="Send" class="button" />
+            </form>
+          </div>
+        </div>
       </div>
-    </div>
-      </section>
-    </div>
+    </section>
 
+    <!-- start footer section  -->
     <footer>
-
-      © 2020 Jenny Oh 
+      © 2020 Jenny Oh
     </footer>
 
-    <!-- cursor effect -->
+    <!-- Javascript section  -->
     <div class="circle" id="circle"></div>
     <script src="index.js"></script>
-    <!-- <script src="chart.js"></script> -->
-
   </body>
 </html>
