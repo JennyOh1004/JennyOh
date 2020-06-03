@@ -156,6 +156,7 @@ a {
   flex-direction: row;
   margin: 40px;
   justify-content: center;
+  z-index: 3;
 }
 
 ion-icon {
@@ -417,4 +418,17 @@ footer {
   letter-spacing: 2px;
   text-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
   font-family: "Harmattan", sans-serif;
+}
+
+/* mouse cursor effect */
+
+.circle {
+  position: fixed;
+  z-index: 0;
+  border-radius: 50%;
+  width: 180px;
+  height: 180px;
+  background: white;
+  mix-blend-mode: difference;
+  opacity: 0.8;
 }
