@@ -66,16 +66,6 @@ section {
   display: flex;
   flex-direction: column;
 }
-/* footer {
-  text-align: center;
-  padding: 5%;
-  color: #596164;
-  background: #fff;
-  width: 100%;
-  font-size: 0.8vw;
-  letter-spacing: 2px;
-  text-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
-} */
 
 .contact__container {
   width: 100%;
@@ -156,6 +146,16 @@ a {
   text-decoration: none;
   z-index: 5;
   position: relative;
+}
+
+.sub__navigation {
+  visibility: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.sub__nav {
+  margin-top: auto;
 }
 
 /* nav scrolled effect */
@@ -279,12 +279,12 @@ span {
   width: 40vw;
 }
 
-.project__h2 {
+/* .project__h2 {
   font-size: 50px;
   font-family: "Montserrat Subrayada", sans-serif;
   color: #000;
   padding: 10px;
-}
+} */
 
 /* image padding  */
 .main_project {
@@ -451,4 +451,158 @@ footer {
   background: white;
   mix-blend-mode: difference;
   opacity: 0.8;
+}
+
+@media only screen and (max-width: 768px) {
+  main {
+    margin-top: 45%;
+  }
+
+  #logo {
+    color: #000;
+    font-size: 8vw;
+    padding: 1%;
+    font-family: "Luckiest Guy", cursive;
+    z-index: 5;
+  }
+
+  ion-icon {
+    font-size: 4.5vw;
+    padding: 3vw;
+    margin-left: 10px;
+  }
+
+  .circle {
+    display: none;
+  }
+
+  .contact__info {
+    width: 70%;
+    height: 80%;
+  }
+}
+@media only screen and (max-width: 375px) {
+  main {
+    margin-top: 50%;
+  }
+
+  .home_h2 {
+    font-size: 4vw;
+    letter-spacing: 2px;
+  }
+
+  #logo {
+    color: #000;
+    font-size: 7vw;
+    padding: 1%;
+    font-family: "Luckiest Guy", cursive;
+    z-index: 5;
+  }
+
+  .nav {
+    display: none;
+  }
+
+  .sub__navigation {
+    visibility: visible;
+    display: flex;
+    flex-direction: column;
+  }
+
+  #sub__nav {
+    position: fixed;
+    background: #fff;
+    width: 100%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 1.5vw;
+    display: flex;
+    margin: 0 auto;
+    z-index: 4;
+    align-items: center;
+  }
+  .circle {
+    display: none;
+  }
+
+  ion-icon {
+    font-size: 4vw;
+    padding: 3vw;
+    margin-left: 10px;
+  }
+
+  .about_p {
+    padding-top: 6%;
+    margin: 0 auto;
+    font-size: 3.5vw;
+  }
+
+  .contact__info {
+    width: 80%;
+    height: 70%;
+  }
+}
+
+@media only screen and (max-width: 414px) {
+  main {
+    margin-top: 55%;
+  }
+
+  .home_h2 {
+    font-size: 4vw;
+    letter-spacing: 2px;
+  }
+
+  #logo {
+    color: #000;
+    font-size: 7vw;
+    padding: 1%;
+    font-family: "Luckiest Guy", cursive;
+    z-index: 5;
+  }
+
+  .nav {
+    display: none;
+  }
+
+  .sub__navigation {
+    visibility: visible;
+    display: flex;
+    flex-direction: column;
+  }
+
+  #sub__nav {
+    position: fixed;
+    background: #fff;
+    width: 100%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 1.5vw;
+    display: flex;
+    margin: 0 auto;
+    z-index: 4;
+    align-items: center;
+  }
+  .circle {
+    display: none;
+  }
+
+  ion-icon {
+    font-size: 4vw;
+    padding: 3vw;
+    margin-left: 10px;
+  }
+
+  .about_p {
+    padding-top: 6%;
+    margin: 0 auto;
+    font-size: 3.5vw;
+  }
+
+  .contact__info {
+    width: 80%;
+    height: 70%;
+  }
 }
