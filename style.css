@@ -281,6 +281,10 @@ span {
   width: 40vw;
 }
 
+ion-icon a {
+  color: #000;
+  z-index: 3;
+}
 /* image padding  */
 .main_project {
   padding-top: 10%;
