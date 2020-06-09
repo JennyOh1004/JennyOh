@@ -323,6 +323,7 @@ span {
   display: flex;
   flex-direction: row;
   margin-top: 15%;
+  z-index: 3;
 }
 
 .gallery_child {
