@@ -329,6 +329,7 @@ span {
   justify-content: space-between;
   width: 100%;
   margin: 3%;
+  z-index: 3;
 }
 
 .gallery_grand_child {
@@ -344,6 +345,12 @@ span {
   width: 30vw;
   height: 35vh;
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  cursor: pointer;
+}
+
+.gallery_img:hover {
+  opacity: 0.8;
+  cursor: pointer;
 }
 
 .gallery_h3 {
@@ -351,8 +358,9 @@ span {
   margin: auto 0;
   letter-spacing: 1px;
   font-family: "Krona One", sans-serif;
-  font-size: 1vw;
+  font-size: 1.5vw;
   padding: 3%;
+  z-index: 4;
 }
 /* contact section */
 
@@ -414,7 +422,7 @@ textarea {
   transition: 0.5s ease-in;
   cursor: pointer;
   font-family: "Harmattan", sans-serif;
-  font-size: 2vw;
+  font-size: 2.5vw;
   letter-spacing: 2px;
 }
 
@@ -436,7 +444,7 @@ input.button {
   border: 1px solid #fff;
   width: 30%;
   height: 5%;
-  font-size: 1vw;
+  font-size: 2vw;
   border-radius: 8px;
   color: #596164;
   padding: 10px;
@@ -450,11 +458,11 @@ input.button {
 }
 
 input::placeholder {
-  font-size: 1.2vw;
+  font-size: 2vw;
 }
 
 textarea::placeholder {
-  font-size: 1.2vw;
+  font-size: 2vw;
 }
 /* scroll effect */
 
@@ -616,6 +624,11 @@ footer {
   .contact__2 {
     font-size: 3vw;
   }
+
+  input,
+  textarea {
+    font-size: 2vw;
+  }
 }
 
 /* Responsive web design for max-width: 414px */
@@ -717,5 +730,10 @@ footer {
   .contact__h1,
   .about_j {
     font-size: 7vw;
+  }
+
+  input,
+  textarea {
+    font-size: 2vw;
   }
 }
