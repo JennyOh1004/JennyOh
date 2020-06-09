@@ -319,6 +319,41 @@ span {
   line-height: 4rem;
 }
 
+.gallery_parent {
+  display: flex;
+  flex-direction: row;
+  margin-top: 15%;
+}
+
+.gallery_child {
+  justify-content: space-between;
+  width: 100%;
+  margin: 3%;
+}
+
+.gallery_grand_child {
+  display: flex;
+  justify-content: space-between;
+  width: 30vw;
+  height: 35vh;
+  margin: 3% auto;
+}
+
+.gallery_img {
+  border-radius: 5px;
+  width: 30vw;
+  height: 35vh;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+
+.gallery_h3 {
+  text-align: center;
+  margin: auto 0;
+  letter-spacing: 1px;
+  font-family: "Krona One", sans-serif;
+  font-size: 1vw;
+  padding: 3%;
+}
 /* contact section */
 
 .contact__h1 {
