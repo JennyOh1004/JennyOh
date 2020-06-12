@@ -556,9 +556,9 @@ footer {
     z-index: 5;
   }
 
-  .nav {
+  /* .nav {
     display: none;
-  }
+  } */
 
   .sub__navigation {
     visibility: visible;
@@ -651,10 +651,10 @@ footer {
     font-family: "Luckiest Guy", cursive;
     z-index: 5;
   }
-
+  /* 
   .nav {
     display: none;
-  }
+  } */
 
   .sub__navigation {
     visibility: visible;

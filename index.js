@@ -21,6 +21,13 @@ window.addEventListener("load", () => {
     document.getElementById("circle").style.display = "none";
   }
 });
+
+window.addEventListener("load", () => {
+  if (window.mobileCheck()) {
+    document.getElementById("nav").style.display = "none";
+  }
+});
+
 // mouse cursor effect
 
 let circle = document.getElementById("circle");
